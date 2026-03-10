@@ -87,83 +87,19 @@ cv:
           - "Surface strain measurement of hand skin during grasping"
 
     Presentations:
-      - title: "3D Stereo Adaptive Mesh Augmented Lagrangian Digital Image Correlation"
-        authors:
-          - "2025 SEM Annual Conference"
-        date: 2025-06-01
-        awarder: Milwaukee, WI
-        summary: ""
-
-      - title: "Repetitive Laser-Induced Cavitation Dynamics and Damage at Soft Matter Interfaces"
-        authors:
-          - "2025 IMAC-XLIII Conference"
-        date: 2025-02-01
-        awarder: Orlando, FL
-        summary: ""
-
-      - title: "Exploring the rate-dependent mechanical behavior of liquid-filled metamaterials across length scales"
-        authors:
-          - "2024 SEM Annual Conference"
-        date: 2024-06-01
-        awarder: Vancouver, WA
-        summary: ""
-
-      - title: "Exploring the Interplay of Alveolar Mechanics and Fluid Accumulation in Pulmonary Edema"
-        authors:
-          - "2024 Southern SEM Student Symposium"
-        date: 2024-05-01
-        awarder: Baton Rouge, LA
-        summary: ""
-
-      - title: "STAQ Digital Image Correlation for Resolving Large Deformations Around Complex Geometries"
-        authors:
-          - "2024 Graduate and Industry Networking Event"
-        date: 2024-01-01
-        awarder: Austin, TX
-        summary: ""
-
-      - title: "Optimization of the Forearm Angle for Arm Wrestling Using Multi-Camera Stereo DIC"
-        authors:
-          - "2021 Chinese Congress of Experimental Mechanics"
-        date: 2021-04-01
-        awarder: Jiaxing, China
-        summary: ""
+      - bullet: "**3D Stereo Adaptive Mesh Augmented Lagrangian Digital Image Correlation** — 2025 SEM Annual Conference, Milwaukee, WI"
+      - bullet: "**Repetitive Laser-Induced Cavitation Dynamics and Damage at Soft Matter Interfaces** — 2025 IMAC-XLIII Conference, Orlando, FL"
+      - bullet: "**Exploring the rate-dependent mechanical behavior of liquid-filled metamaterials across length scales** — 2024 SEM Annual Conference, Vancouver, WA"
+      - bullet: "**Exploring the Interplay of Alveolar Mechanics and Fluid Accumulation in Pulmonary Edema** — 2024 Southern SEM Student Symposium, Baton Rouge, LA"
+      - bullet: "**STAQ Digital Image Correlation for Resolving Large Deformations Around Complex Geometries** — 2024 Graduate and Industry Networking Event, Austin, TX"
+      - bullet: "**Optimization of the Forearm Angle for Arm Wrestling Using Multi-Camera Stereo DIC** — 2021 Chinese Congress of Experimental Mechanics, Jiaxing, China"
 
     Mentoring:
-      - title: Zane Hong Zheng
-        authors:
-          - "The University of Texas at Austin"
-        date: 2023
-        awarder: Undergraduate Research Student
-        summary: "2023 - present"
-
-      - title: Nathaniel Beasley
-        authors:
-          - "The University of Texas at Austin"
-        date: 2024
-        awarder: Undergraduate Research Student
-        summary: "2024 - present"
-
-      - title: Andrew Doty
-        authors:
-          - "The University of Texas at Austin"
-        date: 2024
-        awarder: Undergraduate Research Student
-        summary: "2024 - present"
-
-      - title: Junyong Kim
-        authors:
-          - "The University of Texas at Austin"
-        date: 2024
-        awarder: Undergraduate Research Student
-        summary: "2024 - present"
-
-      - title: Xinyi Chen
-        authors:
-          - "The University of Texas at Austin"
-        date: 2024
-        awarder: Undergraduate Exchange Student (Tsinghua University)
-        summary: "2024 - present"
+      - bullet: "**Zane Hong Zheng** — Undergraduate Research Student, UT Austin (2023 – present)"
+      - bullet: "**Nathaniel Beasley** — Undergraduate Research Student, UT Austin (2024 – present)"
+      - bullet: "**Andrew Doty** — Undergraduate Research Student, UT Austin (2024 – present)"
+      - bullet: "**Junyong Kim** — Undergraduate Research Student, UT Austin (2024 – present)"
+      - bullet: "**Xinyi Chen** — Undergraduate Exchange Student (Tsinghua University), UT Austin (2024 – present)"
 
     Skills:
       - name: Programming
@@ -187,38 +123,10 @@ cv:
         keywords: "Git, LaTeX, OpenCV, NumPy, SciPy, ImageJ"
 
     Memberships:
-      - title: Student Member
-        authors:
-          - "Society for Experimental Mechanics (SEM)"
-        date: 2023
-        awarder: SEM
-        summary: "2023 - present"
-
-      - title: Student Member
-        authors:
-          - "International Digital Image Correlation Society (iDICs)"
-        date: 2023
-        awarder: iDICs
-        summary: "2023 - present"
-
-      - title: Participant
-        authors:
-          - "Stereo Digital Image Correlation Challenge 2.0"
-        date: 2023
-        awarder: iDICs
-        summary: ""
-
-      - title: Project Assistant
-        authors:
-          - "Digital Volume Correlation Challenge 2.0"
-        date: 2023
-        awarder: iDICs
-        summary: ""
+      - bullet: "Student Member, **Society for Experimental Mechanics (SEM)** (2023 – present)"
+      - bullet: "Student Member, **International Digital Image Correlation Society (iDICs)** (2023 – present)"
+      - bullet: "Participant, **Stereo Digital Image Correlation Challenge 2.0** (iDICs)"
+      - bullet: "Project Assistant, **Digital Volume Correlation Challenge 2.0** (iDICs)"
 
     Patents:
-      - title: "A 3D point cloud measurement method for muddy water based on infrared diffraction spots and binocular vision"
-        authors:
-          - "Xinxing Shao, Zixiang Tong, Liuning Gu, et al."
-        date: 2023
-        awarder: China Patent
-        summary: ""
+      - bullet: "**A 3D point cloud measurement method for muddy water based on infrared diffraction spots and binocular vision** — Xinxing Shao, Zixiang Tong, Liuning Gu, et al. (China Patent, 2023)"
