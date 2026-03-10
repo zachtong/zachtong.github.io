@@ -33,3 +33,4 @@ My research focuses on advancing **Digital Image/Volume Correlation (DIC/DVC)** 
 - Fracture Mechanics + DIC
 - Soft Material & Biomechanical Characterization
 - Stereo Vision & 3D Measurement Systems
+- Finite Element Simulation (Abaqus, COMSOL Multiphysics)
