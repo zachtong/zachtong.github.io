@@ -83,8 +83,87 @@ cv:
         start_date: 2016-09-01
         end_date: 2020-06-01
         highlights:
-          - "Four-camera DIC system for in vivo biokinematic measurements"
+          - "Four-camera DIC system for in vivo biokinematic measurements during arm wrestling"
           - "Surface strain measurement of hand skin during grasping"
+
+    Presentations:
+      - title: "3D Stereo Adaptive Mesh Augmented Lagrangian Digital Image Correlation"
+        authors:
+          - "2025 SEM Annual Conference"
+        date: 2025-06-01
+        awarder: Milwaukee, WI
+        summary: ""
+
+      - title: "Repetitive Laser-Induced Cavitation Dynamics and Damage at Soft Matter Interfaces"
+        authors:
+          - "2025 IMAC-XLIII Conference"
+        date: 2025-02-01
+        awarder: Orlando, FL
+        summary: ""
+
+      - title: "Exploring the rate-dependent mechanical behavior of liquid-filled metamaterials across length scales"
+        authors:
+          - "2024 SEM Annual Conference"
+        date: 2024-06-01
+        awarder: Vancouver, WA
+        summary: ""
+
+      - title: "Exploring the Interplay of Alveolar Mechanics and Fluid Accumulation in Pulmonary Edema"
+        authors:
+          - "2024 Southern SEM Student Symposium"
+        date: 2024-05-01
+        awarder: Baton Rouge, LA
+        summary: ""
+
+      - title: "STAQ Digital Image Correlation for Resolving Large Deformations Around Complex Geometries"
+        authors:
+          - "2024 Graduate and Industry Networking Event"
+        date: 2024-01-01
+        awarder: Austin, TX
+        summary: ""
+
+      - title: "Optimization of the Forearm Angle for Arm Wrestling Using Multi-Camera Stereo DIC"
+        authors:
+          - "2021 Chinese Congress of Experimental Mechanics"
+        date: 2021-04-01
+        awarder: Jiaxing, China
+        summary: ""
+
+    Mentoring:
+      - title: Zane Hong Zheng
+        authors:
+          - "The University of Texas at Austin"
+        date: 2023
+        awarder: Undergraduate Research Student
+        summary: "2023 - present"
+
+      - title: Nathaniel Beasley
+        authors:
+          - "The University of Texas at Austin"
+        date: 2024
+        awarder: Undergraduate Research Student
+        summary: "2024 - present"
+
+      - title: Andrew Doty
+        authors:
+          - "The University of Texas at Austin"
+        date: 2024
+        awarder: Undergraduate Research Student
+        summary: "2024 - present"
+
+      - title: Junyong Kim
+        authors:
+          - "The University of Texas at Austin"
+        date: 2024
+        awarder: Undergraduate Research Student
+        summary: "2024 - present"
+
+      - title: Xinyi Chen
+        authors:
+          - "The University of Texas at Austin"
+        date: 2024
+        awarder: Undergraduate Exchange Student (Tsinghua University)
+        summary: "2024 - present"
 
     Skills:
       - name: Programming
@@ -134,4 +213,12 @@ cv:
           - "Digital Volume Correlation Challenge 2.0"
         date: 2023
         awarder: iDICs
+        summary: ""
+
+    Patents:
+      - title: "A 3D point cloud measurement method for muddy water based on infrared diffraction spots and binocular vision"
+        authors:
+          - "Xinxing Shao, Zixiang Tong, Liuning Gu, et al."
+        date: 2023
+        awarder: China Patent
         summary: ""
