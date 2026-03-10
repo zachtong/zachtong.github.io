@@ -37,6 +37,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
+        },{id: "nav-photos",
+          title: "photos",
+          description: "Snapshots from conferences, lab life, and adventures beyond the lab.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/photos/";
+          },
         },{id: "news-started-my-ph-d-in-engineering-mechanics-at-the-university-of-texas-at-austin-joining-the-yang-research-group",
           title: 'Started my Ph.D. in Engineering Mechanics at The University of Texas at Austin,...',
           description: "",
