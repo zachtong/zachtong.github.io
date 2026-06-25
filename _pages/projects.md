@@ -5,7 +5,7 @@ permalink: /projects/
 description: Open-source tools I've built for optical measurement, 3D vision, and deep-learning-based deformation analysis.
 nav: true
 nav_order: 3
-display_categories: ["3D Measurement & Vision", "Deep Learning for Measurement", "Imaging & Analysis Tools"]
+display_categories: ["Full-Field Measurement & Vision", "Deep Learning for Measurement", "Imaging & Analysis Tools"]
 horizontal: false
 ---
 

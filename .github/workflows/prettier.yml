@@ -1,14 +1,7 @@
 name: Prettier code formatter
 
 on:
-  pull_request:
-    branches:
-      - master
-      - main
-  push:
-    branches:
-      - master
-      - main
+  workflow_dispatch: # disabled: manual-only (was push/PR). Personal site does not need a formatting gate.
 
 jobs:
   check:
