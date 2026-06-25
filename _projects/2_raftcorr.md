@@ -1,10 +1,10 @@
 ---
 layout: page
 title: RAFTcorr
-description: The first fully open-source RAFT-based DIC framework with physically realistic training-data generation, pre-trained weights, and a user-friendly GUI.
+description: Open-source deep-learning framework for dense image registration and sub-pixel motion estimation — realistic synthetic-data generation, pre-trained weights, and a user-friendly GUI.
 img: assets/img/raftcorr/Al_with_hole_von_Mises_strain.gif
 importance: 2
-category: Deep Learning DIC
+category: "Deep Learning for Measurement"
 github: https://github.com/zachtong/RAFTcorr
 ---
 

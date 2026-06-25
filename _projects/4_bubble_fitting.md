@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Bubble-Radius-Fitting
-description: MATLAB-based GUI for bubble radius fitting in complex-background ultra-high-speed cavitation imaging.
+description: MATLAB GUI for automated radius and feature extraction from ultra-high-speed imaging with complex backgrounds.
 img: assets/img/Bubble_radius_fitting.gif
 importance: 4
-category: Analysis Tools
+category: "Imaging & Analysis Tools"
 github: https://github.com/zachtong/Bubble-Radius-Fitting
 ---
 

@@ -1,10 +1,10 @@
 ---
 layout: page
 title: 3D-Stereo-ALDIC
-description: Open-source stereo-DIC for high-accuracy 3D full-field displacement measurement under complex geometry, large deformation, and biological tissue challenges.
+description: Open-source stereo-vision system for high-accuracy 3D full-field shape and displacement measurement — stereo camera calibration, 3D reconstruction, and robust correlation under complex geometry and large deformation.
 img: assets/img/stereo-ALDIC_demo.gif
 importance: 1
-category: DIC/DVC Tools
+category: "3D Measurement & Vision"
 github: https://github.com/zachtong/3D-Stereo-ALDIC
 ---
 

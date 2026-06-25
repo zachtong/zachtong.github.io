@@ -7,13 +7,13 @@ first_name: Zixiang
 middle_name:
 last_name: Tong
 contact_note: >
-  Feel free to reach out via email for collaborations or questions about my research and open-source tools.
+  Graduating in 2027 and exploring industry roles in optical metrology, hardware characterization, and imaging systems — feel free to reach out about opportunities, collaborations, or my open-source tools.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  PhD student at UT Austin researching Digital Image Correlation, Machine Learning, and Computer Vision for experimental mechanics.
+  Zixiang (Zach) Tong — PhD candidate in Engineering Mechanics at UT Austin, working on optical metrology, 3D and stereo vision, camera calibration, and machine learning for measuring and validating real-world hardware.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: DIC, DVC, digital image correlation, machine learning, computer vision, experimental mechanics, deep learning
+keywords: optical metrology, hardware characterization, camera calibration, 3D reconstruction, stereo vision, computer vision, image registration, digital image correlation, DIC, DVC, machine learning, deep learning, finite element analysis, FEA, simulation, thermal-mechanical, reliability, semiconductor, digital twin, experimental mechanics
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🔬 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -67,8 +67,8 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------

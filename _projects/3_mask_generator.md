@@ -1,10 +1,10 @@
 ---
 layout: page
 title: DIC-ROI-Mask-Generator
-description: Machine learning-based automated ROI masking and mesh refinement for DIC analysis of complex sample geometries.
+description: Machine-learning (SAM2-based) automated ROI segmentation and adaptive meshing for image-based measurement of complex geometries.
 img: assets/img/mask_generator.gif
 importance: 3
-category: DIC/DVC Tools
+category: "Deep Learning for Measurement"
 github: https://github.com/YangMechanicsGroupUTAustin/DIC-ROI-mask-generator
 ---
 
