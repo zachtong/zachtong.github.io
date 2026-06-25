@@ -30,12 +30,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/news/";
           },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "Engineering Mechanics PhD candidate — optical metrology, simulation, and ML for real-world hardware. Full CV (PDF) above.",
+        },{id: "nav-resume",
+          title: "resume",
+          description: "Industry resume (PDF) — hardware mechanics, metrology, simulation, and ML for physical systems.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/resume/";
           },
         },{id: "nav-photos",
           title: "photos",
@@ -83,7 +83,12 @@ ninja.data = [{
           section: "News",},{id: "news-will-present-raftcorr-an-open-source-deep-learning-dic-framework-for-dense-displacement-measurement-at-sem-annual-2026-in-norfolk-va",
           title: 'Will present RAFTcorr: An Open-Source, Deep Learning DIC Framework for Dense Displacement Measurement...',
           description: "",
-          section: "News",},{id: "projects-3d-stereo-aldic",
+          section: "News",},{id: "projects-pyaldic",
+          title: 'pyALDIC',
+          description: "Open-source Python package for full-field 2D displacement and strain measurement — Augmented-Lagrangian (ADMM) global–local optimization, adaptive mesh refinement, and a desktop GUI. Published on PyPI (al-dic) with a citable DOI.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/0_pyaldic/";
+            },},{id: "projects-3d-stereo-aldic",
           title: '3D-Stereo-ALDIC',
           description: "Open-source stereo-vision system for high-accuracy 3D full-field shape and displacement measurement — stereo camera calibration, 3D reconstruction, and robust correlation under complex geometry and large deformation.",
           section: "Projects",handler: () => {
