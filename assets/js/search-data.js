@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "Open-source tools I&#39;ve built for optical measurement, 3D vision, and deep-learning-based deformation analysis.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "Engineering Mechanics PhD candidate — optical metrology, simulation, and ML for real-world hardware. Full CV (PDF) above.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -85,22 +85,22 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-3d-stereo-aldic",
           title: '3D-Stereo-ALDIC',
-          description: "Open-source stereo-DIC for high-accuracy 3D full-field displacement measurement under complex geometry, large deformation, and biological tissue challenges.",
+          description: "Open-source stereo-vision system for high-accuracy 3D full-field shape and displacement measurement — stereo camera calibration, 3D reconstruction, and robust correlation under complex geometry and large deformation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_3d_stereo_aldic/";
             },},{id: "projects-raftcorr",
           title: 'RAFTcorr',
-          description: "The first fully open-source RAFT-based DIC framework with physically realistic training-data generation, pre-trained weights, and a user-friendly GUI.",
+          description: "Open-source deep-learning framework for dense image registration and sub-pixel motion estimation — realistic synthetic-data generation, pre-trained weights, and a user-friendly GUI.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_raftcorr/";
             },},{id: "projects-dic-roi-mask-generator",
           title: 'DIC-ROI-Mask-Generator',
-          description: "Machine learning-based automated ROI masking and mesh refinement for DIC analysis of complex sample geometries.",
+          description: "Machine-learning (SAM2-based) automated ROI segmentation and adaptive meshing for image-based measurement of complex geometries.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_mask_generator/";
             },},{id: "projects-bubble-radius-fitting",
           title: 'Bubble-Radius-Fitting',
-          description: "MATLAB-based GUI for bubble radius fitting in complex-background ultra-high-speed cavitation imaging.",
+          description: "MATLAB GUI for automated radius and feature extraction from ultra-high-speed imaging with complex backgrounds.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_bubble_fitting/";
             },},{
