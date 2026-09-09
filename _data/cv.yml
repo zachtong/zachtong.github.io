@@ -1,10 +1,10 @@
 cv:
   name: Zixiang Tong
-  label: Ph.D. Student, Research Assistant
+  label: Ph.D. Candidate, Engineering Mechanics
   email: zachtong@utexas.edu
   location: Austin, TX
   image: ""
-  summary: Ph.D. student in Engineering Mechanics at UT Austin, researching digital image/volume correlation (DIC/DVC) algorithms for extreme conditions and viscoelastic material characterization.
+  summary: Ph.D. candidate in Engineering Mechanics at UT Austin (graduating 2027) with expertise in digital image and volume correlation (DIC/DVC), material characterization, and FE model validation. Experience in thermo-mechanical FE modeling, inverse material-property identification, and development of validated measurement software.
 
   social_networks:
     - network: GitHub
@@ -48,6 +48,15 @@ cv:
         end_date: 2020
 
     Experience:
+      - company: Tokyo Electron (TEL)
+        position: Advanced Packaging R&D Intern
+        location: Austin, TX
+        start_date: 2026-05-01
+        end_date: 2026-08-31
+        highlights:
+          - "FE-based machine-learning surrogate models for advanced packaging, enabling near-real-time response prediction within evaluated operating conditions"
+          - "End-to-end training pipeline turning parametric FE multiphysics datasets into models that reconstruct full-field responses from sparse measurements"
+
       - company: The University of Texas at Austin
         position: Research Assistant
         location: Austin, TX
@@ -55,7 +64,10 @@ cv:
         end_date: present
         summary: Department of Aerospace Engineering and Engineering Mechanics
         highlights:
-          - "Development of DIC/DVC algorithms for extreme conditions (3D stereo-ALDIC, RAFTcorr)"
+          - "Open-source measurement software: pyALDIC, pyALDVC and pyALDIC-3D, distributed through PyPI, GitHub and Zenodo"
+          - "Learning-based correlation solvers RAFTcorr and RAFT-DVC, with characterized accuracy, runtime and operating boundaries"
+          - "Inverse identification of heterogeneous material properties, with the Oden Institute and Sandia National Laboratories"
+          - "Package-level thermo-mechanical FE modeling and simulation-to-test correlation (SRC-sponsored)"
           - "Machine learning-aided spatial adaptation for DIC under complex geometry"
           - "Metamaterial characterization via 3D printing and mechanical testing"
 
@@ -67,6 +79,15 @@ cv:
         summary: Department of Aerospace Engineering and Engineering Mechanics
         highlights:
           - "ASE324L Aerospace Material Lab (Fall 2023, Spring 2024, Fall 2024)"
+
+      - company: Orbbec Inc.
+        position: Computer Vision Engineer Intern
+        location: Shenzhen, China
+        start_date: 2022-06-01
+        end_date: 2022-09-01
+        highlights:
+          - "Python/C++ calibration and validation tooling for production 3D camera hardware"
+          - "Diagnosed system-level measurement error against production accuracy requirements"
 
       - company: Southeast University
         position: Graduate Research Assistant
@@ -87,6 +108,9 @@ cv:
           - "Surface strain measurement of hand skin during grasping"
 
     Presentations:
+      - bullet: "**RAFTcorr: An Open-Source, Deep Learning DIC Framework for Dense Displacement Measurement** — 2026 SEM Annual Conference, Norfolk, VA"
+      - bullet: "**RAFTcorr: An Open-Source, Deep Learning DIC Framework for Dense Displacement Measurement** — 2025 iDICs Conference, Alexandria, VA"
+      - bullet: "**3D Stereo-ALDIC for High-Precision Full-field Deformation Characterization in Semiconductor Materials** — 2025 SRC TECHCON, Austin, TX"
       - bullet: "**3D Stereo Adaptive Mesh Augmented Lagrangian Digital Image Correlation** — 2025 SEM Annual Conference, Milwaukee, WI"
       - bullet: "**Repetitive Laser-Induced Cavitation Dynamics and Damage at Soft Matter Interfaces** — 2025 IMAC-XLIII Conference, Orlando, FL"
       - bullet: "**Exploring the rate-dependent mechanical behavior of liquid-filled metamaterials across length scales** — 2024 SEM Annual Conference, Vancouver, WA"
@@ -121,6 +145,11 @@ cv:
         level: ""
         icon: fa-solid fa-wrench
         keywords: "Git, LaTeX, OpenCV, NumPy, SciPy, ImageJ"
+
+    Awards:
+      - bullet: "**SRC Research Scholar**, Semiconductor Research Corporation (2025)"
+      - bullet: "**Graduate Recognition Award**, UT Austin (2025)"
+      - bullet: "**Graduate Excellence Fellowship**, UT Austin (2023 – 2026)"
 
     Memberships:
       - bullet: "Student Member, **Society for Experimental Mechanics (SEM)** (2023 – present)"
