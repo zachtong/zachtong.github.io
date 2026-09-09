@@ -3,7 +3,7 @@ layout: page
 title: 3D-Stereo-ALDIC
 description: Open-source stereo-vision system for high-accuracy 3D full-field shape and displacement measurement — stereo camera calibration, 3D reconstruction, and robust correlation under complex geometry and large deformation.
 img: assets/img/stereo-ALDIC_demo.gif
-importance: 2
+importance: 4
 category: "Full-Field Measurement & Vision"
 github: https://github.com/zachtong/3D-Stereo-ALDIC
 ---

@@ -3,7 +3,7 @@ layout: page
 title: RAFTcorr
 description: Open-source deep-learning framework for dense image registration and sub-pixel motion estimation — realistic synthetic-data generation, pre-trained weights, and a user-friendly GUI.
 img: assets/img/raftcorr/Al_with_hole_von_Mises_strain.gif
-importance: 2
+importance: 1
 category: "Deep Learning for Measurement"
 github: https://github.com/zachtong/RAFTcorr
 ---
@@ -16,7 +16,7 @@ RAFTcorr is the first fully open-source RAFT-based Digital Image Correlation fra
 - User-friendly GUI that eliminates manual parameter tuning
 - Sub-pixel accuracy across rigid-body translation, rotation, large deformation, and complex metamaterial geometries
 
-**Status:** Under review
+**Status:** Under review — preprint: [RAFTcorr: A Deep Learning Digital Image Correlation Framework with Operating-Boundary Characterization](https://www.researchsquare.com/article/rs-9452500/v1)
 
 ---
 

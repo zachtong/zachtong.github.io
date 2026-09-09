@@ -22,4 +22,4 @@ pyALDIC is an open-source **Augmented-Lagrangian Digital Image Correlation** pac
 - Packaged on PyPI (`pip install al-dic`) with versioned releases and a citable DOI
 - Sub-pixel accuracy under large deformation, discontinuities, and image noise
 
-**Links:** [GitHub](https://github.com/zachtong/pyALDIC) · [PyPI](https://pypi.org/project/al-dic/) · [DOI](https://doi.org/10.5281/zenodo.19521061)
+**Links:** [GitHub](https://github.com/zachtong/pyALDIC) · [PyPI](https://pypi.org/project/al-dic/) · [arXiv](https://arxiv.org/abs/2607.22755) · [DOI](https://doi.org/10.5281/zenodo.19521061)

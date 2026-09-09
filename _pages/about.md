@@ -51,7 +51,7 @@ I'm an engineer who **measures, models, and validates how real hardware behaves*
 
 On the **mechanics and simulation** side, I work on deformation, thermal-mechanical behavior, and reliability — connecting experiments with FEA and data-driven, digital-twin-style models. On the **measurement and vision** side, I build optical-metrology and 3D/stereo-vision tools — Digital Image/Volume Correlation (DIC/DVC), dense image registration, camera calibration, and 3D reconstruction — that recover full-field displacement and strain under complex, real-world conditions.
 
-I'm currently an **R&D intern at Tokyo Electron**, working on simulation-informed modeling for semiconductor equipment. I'm a PhD candidate graduating in **2027**, looking for industry roles across **hardware / product mechanics, reliability and simulation, metrology and hardware characterization, and camera / imaging systems**.
+In summer 2026 I was an **R&D intern at Tokyo Electron**, working on simulation-informed modeling for semiconductor equipment. I'm a PhD candidate graduating in **2027**, looking for industry roles across **hardware / product mechanics, reliability and simulation, metrology and hardware characterization, and camera / imaging systems**.
 
 **Focus areas**
 - Hardware mechanics — deformation, thermal-mechanical, reliability & validation
