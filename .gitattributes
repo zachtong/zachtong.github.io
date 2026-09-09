@@ -1,2 +1,19 @@
+# Normalize every text file to LF in the repository.
+# Without this, editing from Windows (this tree is synced through OneDrive)
+# rewrites whole files with CRLF and every commit shows hundreds of files
+# changed with no content change.
+* text=auto eol=lf
+
 # Force LF line endings, needed for Docker to work on Windows
 *.sh text eol=lf
+
+# Binary assets: never touch these.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.mp4 binary
+*.pdf binary
+*.ico binary
+*.woff binary
+*.woff2 binary
