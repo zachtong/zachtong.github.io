@@ -68,20 +68,20 @@ ninja.data = [{
           section: "News",},{id: "news-presented-raftcorr-at-idics-2025-in-alexandria-va",
           title: 'Presented RAFTcorr at iDICs 2025 in Alexandria, VA.',
           description: "",
-          section: "News",},{id: "news-shared-research-experiences-at-a-panel-discussion-at-the-texas-material-scientists-and-engineers-tmse-meeting-with-dylan-baird",
-          title: 'Shared research experiences at a panel discussion at the Texas Material Scientists and...',
-          description: "",
           section: "News",},{id: "news-our-paper-machine-learning-aided-spatial-adaptation-for-improved-dic-analysis-of-complex-geometries-has-been-published-in-strain",
           title: 'Our paper Machine Learning-Aided Spatial Adaptation for Improved DIC Analysis of Complex Geometries...',
-          description: "",
-          section: "News",},{id: "news-attended-the-60th-texas-society-for-microscopy-annual-meeting-with-lab-members-featuring-oral-presentations-and-hands-on-tutorials-on-super-resolution-confocal-microscopy-and-tem",
-          title: 'Attended the 60th Texas Society for Microscopy Annual Meeting with lab members, featuring...',
           description: "",
           section: "News",},{id: "news-honored-to-contribute-to-the-idics-good-practices-guide-edition-2-thank-you-to-the-entire-gpg-team-and-especially-my-advisor-prof-jin-yang-for-the-guidance-and-opportunity",
           title: 'Honored to contribute to the iDICs Good Practices Guide (Edition 2). Thank you...',
           description: "",
           section: "News",},{id: "news-will-present-raftcorr-an-open-source-deep-learning-dic-framework-for-dense-displacement-measurement-at-sem-annual-2026-in-norfolk-va",
           title: 'Will present RAFTcorr: An Open-Source, Deep Learning DIC Framework for Dense Displacement Measurement...',
+          description: "",
+          section: "News",},{id: "news-preprint-posted-pyaldic-a-python-implementation-of-augmented-lagrangian-digital-image-correlation-with-a-gui-adaptive-meshing-and-mask-aware-subset-splitting-arxiv-2607-22755-the-package-is-on-pypi-as-al-dic",
+          title: 'Preprint posted: pyALDIC: A Python Implementation of Augmented Lagrangian Digital Image Correlation with...',
+          description: "",
+          section: "News",},{id: "news-preprint-posted-raft-dvc-resolution-aware-machine-learning-based-digital-volume-correlation-arxiv-2609-01876-reference-implementation-and-the-three-trained-solvers-are-on-github",
+          title: 'Preprint posted: RAFT-DVC: Resolution-Aware Machine Learning-Based Digital Volume Correlation — arXiv:2609.01876. Reference implementation...',
           description: "",
           section: "News",},{id: "projects-pyaldic",
           title: 'pyALDIC',
@@ -108,12 +108,27 @@ ninja.data = [{
           description: "MATLAB GUI for automated radius and feature extraction from ultra-high-speed imaging with complex backgrounds.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_bubble_fitting/";
+            },},{id: "projects-pyaldvc",
+          title: 'pyALDVC',
+          description: "Open-source Python package for full-field 3D displacement and strain from volumetric scans (micro-CT, confocal, MRI, OCT) — GPU-accelerated Augmented-Lagrangian DVC, boundary-aware subsets, and an interactive 3D viewer. Published on PyPI (al-dvc).",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_pyaldvc/";
+            },},{id: "projects-pyaldic-3d",
+          title: 'pyALDIC-3D',
+          description: "Two-camera stereo-DIC in one desktop application — built-in calibration with a coded-target detector, metric 3D shape, and Green–Lagrange surface strain in millimetres. Published on PyPI (al-dic-3d) with a citable DOI.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_pyaldic_3d/";
+            },},{id: "projects-raft-dvc",
+          title: 'RAFT-DVC',
+          description: "Resolution-aware learned digital volume correlation — a 3D adaptation of the RAFT optical-flow architecture, released as three resolution arms with an explicit rule for choosing between them.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_raft_dvc/";
             },},{
         id: 'social-cv',
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/CV_ZixiangTong.pdf", "_blank");
+          window.open("/assets/pdf/Zixiang_Tong_Resume.pdf", "_blank");
         },
       },{
         id: 'social-email',
