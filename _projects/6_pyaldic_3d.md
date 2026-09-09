@@ -1,18 +1,25 @@
 ---
 layout: page
 title: pyALDIC-3D
-description: Two-camera stereo-DIC in one desktop application — built-in calibration with a coded-target detector, metric 3D shape, and Green–Lagrange surface strain in millimetres. Published on PyPI (al-dic-3d) with a citable DOI.
+description: Two-camera stereo-DIC for metric 3D shape, displacement, and surface strain measurement with independent quality checks.
 img: assets/img/pyaldic3d_main_gui.png
+card_img: /assets/img/project-covers/pyaldic-3d.jpg
+card_description: Experimental 3D surface kinematics for specimens undergoing out-of-plane motion, large strain, and discontinuity.
 importance: 3
-category: "Full-Field Measurement & Vision"
+category: "Full-Field Deformation Measurement"
 github: https://github.com/zachtong/pyALDIC-3D
+year: 2026
+status: Released
+type_label: Stereo measurement method
+tags: [Stereo DIC, Surface Strain, Calibration, Model Validation]
+pypi: https://pypi.org/project/al-dic-3d/
 ---
 
 Stereo-DIC answers two questions at once: where a material point sits in the other camera (shape), and where it went (motion). Most tools answer both with independent subset correlations, which degrades exactly where experiments get interesting — steep gradients, discontinuities, decorrelating patterns. pyALDIC-3D runs temporal tracking through an **Augmented-Lagrangian** solver that couples the local IC-GN subproblems to a global FEM regularizer on an adaptive quadtree mesh, then triangulates to a metric, millimetre-native 3D surface. Calibration, crack handling, quality gating, 3D visualization and export are all in the box.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/pyaldic3d_main_gui.png" title="pyALDIC-3D desktop application: stereo image pairs and the calibration panel on the left, the out-of-plane displacement field in millimetres on the specimen in the centre, and run controls with the per-frame validity log on the right" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="lazy" path="assets/img/pyaldic3d_main_gui.png" title="pyALDIC-3D desktop application: stereo image pairs and the calibration panel on the left, the out-of-plane displacement field in millimetres on the specimen in the centre, and run controls with the per-frame validity log on the right" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -20,6 +27,7 @@ Stereo-DIC answers two questions at once: where a material point sits in the oth
 </div>
 
 **Key Features:**
+
 - Built-in stereo calibration from chessboards, ChArUco boards, circle grids, or a self-developed coded circular target, with reprojection QC, epipolar validation, bundle adjustment and an independent known-distance check that catches a wrong scale a reprojection RMS never will
 - Imports calibrations from six external formats (MATLAB/OpenCV, MatchID, MMC, DICe, OpenCorr, OpenCV-YAML)
 - Metric 3D surface: displacement needs no pixel-size calibration and carries no scale ambiguity

@@ -7,13 +7,11 @@ first_name: Zixiang
 middle_name:
 last_name: Tong
 contact_note: >
-  Graduating in 2027 and exploring industry roles in optical metrology, hardware characterization, and imaging systems — feel free to reach out about opportunities, collaborations, or my open-source tools.
+  I am graduating in 2027 and exploring research engineering roles in solid mechanics, material characterization, simulation, and model validation.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Zixiang (Zach) Tong — PhD candidate in Engineering Mechanics at UT Austin, working on optical metrology, 3D and stereo vision, camera calibration, and machine learning for measuring and validating real-world hardware.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: optical metrology, hardware characterization, camera calibration, 3D reconstruction, stereo vision, computer vision, image registration, digital image correlation, DIC, DVC, machine learning, deep learning, finite element analysis, FEA, simulation, thermal-mechanical, reliability, semiconductor, digital twin, experimental mechanics
+  Zixiang (Zach) Tong — PhD candidate in Engineering Mechanics at UT Austin, working on solid mechanics, material characterization, full-field measurement, finite element simulation, inverse identification, and model validation.
+footer_text:
+keywords: experimental mechanics, solid mechanics, material characterization, constitutive modeling, finite element analysis, FEA, model validation, inverse problems, digital image correlation, DIC, digital volume correlation, DVC, high-strain-rate mechanics, thermal-mechanical analysis, optical metrology, machine learning
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🔬 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -53,14 +51,14 @@ external_services:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 posts_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 1120px
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
@@ -389,7 +387,7 @@ enable_openpanel_analytics: false # enables Openpanel analytics (https://openpan
 enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
 enable_cookie_consent: false # enables GDPR-compliant cookie consent dialog (https://github.com/orestbida/cookieconsent)
-enable_masonry: true # enables automatic project cards arrangement
+enable_masonry: false # project cards use a stable CSS grid
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
@@ -448,7 +446,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap"
   highlightjs:
     integrity:
       css:

@@ -1,80 +1,134 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
-
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
+<div class="home-page">
+  <section class="home-hero" aria-labelledby="home-title">
+    <div class="home-hero__copy">
+      <p class="eyebrow">Experimental mechanician · PhD candidate</p>
+      <h1 id="home-title">I measure deformation—and make models answer to reality.</h1>
+      <p class="home-hero__intro">
+        I combine solid mechanics, full-field experiments, and finite element simulation to characterize material behavior and validate predictive
+        models—using machine learning where it improves resolution, inference, or speed.
+      </p>
+      <p class="home-hero__meta">
+        PhD Candidate in Engineering Mechanics at
+        <a href="https://www.utexas.edu/">The University of Texas at Austin</a> · Graduating 2027
+      </p>
+      <div class="home-hero__actions">
+        <a class="button button--primary" href="{{ '/projects/' | relative_url }}">Explore my research <span aria-hidden="true">↗</span></a>
+        <a class="button button--secondary" href="{{ '/assets/pdf/Zixiang_Tong_Resume.pdf' | relative_url }}">Download résumé</a>
       </div>
-    {% endif %}
+      <div class="availability"><span aria-hidden="true"></span> Open to 2027 research engineering opportunities</div>
+    </div>
 
-    <div class="clearfix">{{ content }}</div>
-
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
-
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
+    <div class="home-hero__portrait">
+      <div class="portrait-frame">
+        <img
+          src="{{ '/assets/img/portrait.jpg' | relative_url }}"
+          alt="Portrait of Zixiang Tong"
+          width="1000"
+          height="1000"
+          fetchpriority="high"
+        >
       </div>
-    {% endif %}
+      <p class="portrait-caption"><span>Austin, Texas</span><span>Mechanics × Experiments × Computation</span></p>
+    </div>
+  </section>
 
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-    {% endif %}
-  </article>
+  <section class="home-section home-capabilities" aria-labelledby="capabilities-title">
+    <div class="section-heading">
+      <p class="eyebrow">What I do</p>
+      <h2 id="capabilities-title">Measure. Model. Validate.</h2>
+      <p>
+        I work across the full mechanics loop—from loading a specimen to measuring its response, identifying its properties, and testing the model.
+      </p>
+    </div>
+
+    <div class="capability-grid">
+      <article class="capability-card">
+        <span class="capability-card__index">01</span>
+        <h3>Measure</h3>
+        <p>Observe material response under real loading with quantitative, full-field experiments.</p>
+        <ul>
+          <li>DIC &amp; DVC</li>
+          <li>High-speed imaging</li>
+          <li>Instrumented testing</li>
+        </ul>
+      </article>
+      <article class="capability-card">
+        <span class="capability-card__index">02</span>
+        <h3>Model</h3>
+        <p>Represent deformation, stress, interfaces, and rate effects with physics-based models.</p>
+        <ul>
+          <li>Solid &amp; continuum mechanics</li>
+          <li>Finite element analysis</li>
+          <li>Thermo-mechanical systems</li>
+        </ul>
+      </article>
+      <article class="capability-card">
+        <span class="capability-card__index">03</span>
+        <h3>Identify &amp; validate</h3>
+        <p>Use measured fields to recover material properties and quantify whether a simulation predicts reality.</p>
+        <ul>
+          <li>Inverse identification</li>
+          <li>Simulation–test correlation</li>
+          <li>Learning-accelerated models</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="home-section" aria-labelledby="featured-work-title">
+    <div class="section-heading section-heading--split">
+      <div>
+        <p class="eyebrow">Selected research</p>
+        <h2 id="featured-work-title">Mechanics questions, answered with experiments and computation.</h2>
+      </div>
+      <a class="text-link" href="{{ '/projects/' | relative_url }}">Explore all research <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="featured-work-grid">
+      {% assign featured_projects = site.projects | where: 'featured', true | sort: 'importance' %}
+      {% for project in featured_projects limit: 3 %}
+        {% include projects.liquid project=project featured=true %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="home-section home-publications" aria-labelledby="selected-research-title">
+    <div class="section-heading section-heading--split">
+      <div>
+        <p class="eyebrow">Selected research</p>
+        <h2 id="selected-research-title">Mechanics, measurement, and model validation.</h2>
+      </div>
+      <a class="text-link" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">→</span></a>
+    </div>
+    {% include selected_papers.liquid %}
+  </section>
+
+  <section class="home-section home-updates" aria-labelledby="updates-title">
+    <div class="section-heading section-heading--split">
+      <div>
+        <p class="eyebrow">Now</p>
+        <h2 id="updates-title">Latest updates.</h2>
+      </div>
+      <a class="text-link" href="{{ '/news/' | relative_url }}">Full timeline <span aria-hidden="true">→</span></a>
+    </div>
+    {% include news.liquid limit=true %}
+  </section>
+
+  <section class="home-contact" aria-labelledby="contact-title">
+    <div>
+      <p class="eyebrow">Let’s work together</p>
+      <h2 id="contact-title">Working on a difficult material, measurement, or validation problem?</h2>
+      <p>I am always glad to talk about mechanics research, experimental methods, simulation, and engineering opportunities.</p>
+    </div>
+    <div class="home-contact__actions">
+      <a class="button button--light" href="mailto:{{ site.data.socials.email }}">Start a conversation</a>
+      <div class="home-contact__links">
+        <a href="https://github.com/{{ site.data.socials.github_username }}">GitHub</a>
+        <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}">Google Scholar</a>
+      </div>
+    </div>
+  </section>
 </div>

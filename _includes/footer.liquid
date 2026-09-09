@@ -1,30 +1,12 @@
-{% capture footer_contents %}
-  &copy; Copyright {{ site.time | date: '%Y' }}
-  {{ site.first_name }}
-  {{ site.middle_name }}
-  {{ site.last_name }}. {{ site.footer_text }}
-  {% if site.impressum_path %}
-    <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-  {% endif %}
-  {% if site.last_updated %}
-    Last updated: {{ 'now' | date: '%B %d, %Y' }}.
-  {% endif %}
-{% endcapture %}
-
-{% if site.footer_fixed %}
-  <footer class="fixed-bottom" role="contentinfo">
-    <div class="container mt-0">
-      {{ footer_contents }}
-    </div>
-  </footer>
-{% else %}
-  <footer class="sticky-bottom mt-5" role="contentinfo">
-    {% if site.newsletter.enabled %}
-      {% include newsletter.liquid %}
-    {% endif %}
-
-    <div class="container">
-      {{ footer_contents }}
-    </div>
-  </footer>
-{% endif %}
+<footer class="site-footer" role="contentinfo">
+  <div class="container site-footer__inner">
+    <p class="site-footer__copyright">© {{ site.time | date: '%Y' }} Zixiang Tong</p>
+    <p class="site-footer__note">Research engineering at the intersection of mechanics, measurement, and computation.</p>
+    <nav class="site-footer__links" aria-label="Footer links">
+      <a href="mailto:{{ site.data.socials.email }}">Email</a>
+      <a href="https://github.com/{{ site.data.socials.github_username }}">GitHub</a>
+      <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}">Scholar</a>
+    </nav>
+  </div>
+</footer>

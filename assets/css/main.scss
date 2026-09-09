@@ -37,3 +37,6 @@
 @use "font-awesome/brands";
 @use "font-awesome/solid";
 @use "font-awesome/regular";
+
+// Site-specific portfolio redesign. Keep this last so it can refine theme defaults.
+@use "portfolio";

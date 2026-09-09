@@ -1,131 +1,100 @@
 ---
 layout: page
-title: photos
+title: Field Notes
+nav_title: Life
 permalink: /photos/
-description: Snapshots from conferences, lab life, and adventures beyond the lab.
+description: Conferences, collaborations, lab life, outreach, and moments beyond the work.
 nav: true
 nav_order: 6
 ---
 
-## Conferences & Presentations
+<p class="page-lede photo-lede">
+  Research is also the people, places, and shared experiments around it. A few frames from conferences, the lab, teaching,
+  and life in between.
+</p>
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/2024_sem_talk.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">Presenting at the 2024 SEM Annual Conference, Vancouver, WA</div>
+<section class="photo-section">
+  <div class="photo-section__heading"><p class="eyebrow">01</p><h2>Conferences &amp; presentations</h2></div>
+  <div class="photo-grid">
+    <div class="photo-card photo-card--wide">
+      {% include figure.liquid loading="lazy" path="assets/img/photos/2024_sem_talk.jpg" class="img-fluid" zoomable=true %}
+      <p class="photo-card__caption">Presenting at the 2024 SEM Annual Conference · Vancouver, Washington</p>
+    </div>
+    <div class="photo-card">
+      {% include figure.liquid loading="lazy" path="assets/img/photos/2024_gain_poster.jpg" class="img-fluid" zoomable=true %}
+      <p class="photo-card__caption">Graduate and Industry Networking Event · UT Austin</p>
+    </div>
+    <div class="photo-card">
+      {% include figure.liquid loading="lazy" path="assets/img/photos/2026_tmse_panel.jpg" class="img-fluid" zoomable=true %}
+      <p class="photo-card__caption">Panel discussion at the 2026 TMSE General Meeting</p>
+    </div>
+    <div class="photo-card">
+      {% include figure.liquid loading="lazy" path="assets/img/photos/2025_with_michael_sutton.jpg" class="img-fluid" zoomable=true %}
+      <p class="photo-card__caption">With Prof. Michael A. Sutton at IMAC-XLIII · 2025</p>
+    </div>
+    <div class="photo-card">
+      {% include figure.liquid loading="lazy" path="assets/img/photos/2025_with_francois_hild.jpg" class="img-fluid" zoomable=true %}
+      <p class="photo-card__caption">With Prof. François Hild at SEM · 2025</p>
+    </div>
+    <div class="photo-card photo-card--wide">
+      {% include figure.liquid loading="lazy" path="assets/img/photos/2025_sem_with_sichen.jpg" class="img-fluid" zoomable=true %}
+      <p class="photo-card__caption">With Sichen and Dr. Yang at the SEM Annual Conference · 2025</p>
+    </div>
   </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/2024_gain_poster.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">Poster session at the 2024 GAIN Networking Event, UT Austin</div>
-  </div>
-</div>
+</section>
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/2025_sem_with_sichen.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">With Sichen and Dr. Yang at the 2025 SEM Annual Conference</div>
+<section class="photo-section">
+  <div class="photo-section__heading"><p class="eyebrow">02</p><h2>Lab &amp; collaborators</h2></div>
+  <div class="photo-grid">
+    <div class="photo-card photo-card--wide">
+      {% include figure.liquid loading="lazy" path="assets/img/photos/2025_summer_group.jpg" class="img-fluid" zoomable=true %}
+      <p class="photo-card__caption">Yang Research Group · Summer 2025</p>
+    </div>
+    <div class="photo-card">
+      {% include figure.liquid loading="lazy" path="assets/img/photos/2025_group_holiday.jpg" class="img-fluid" zoomable=true %}
+      <p class="photo-card__caption">Group holiday photo at ASE/EM</p>
+    </div>
+    <div class="photo-card">
+      {% include figure.liquid loading="lazy" path="assets/img/photos/2025_virtual_meeting.jpg" class="img-fluid" zoomable=true %}
+      <p class="photo-card__caption">Virtual group meeting · 2025</p>
+    </div>
+    <div class="photo-card">
+      {% include figure.liquid loading="lazy" path="assets/img/photos/2025_with_group.jpg" class="img-fluid" zoomable=true %}
+      <p class="photo-card__caption">With group members in the lab</p>
+    </div>
+    <div class="photo-card">
+      {% include figure.liquid loading="lazy" path="assets/img/photos/2025_with_mentees.jpg" class="img-fluid" zoomable=true %}
+      <p class="photo-card__caption">With undergraduate mentees</p>
+    </div>
+    <div class="photo-card photo-card--wide">
+      {% include figure.liquid loading="lazy" path="assets/img/photos/2024_dinner_with_lab.jpg" class="img-fluid" zoomable=true %}
+      <p class="photo-card__caption">Dinner with Dan, Lehu, and Dr. Yang</p>
+    </div>
   </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/2024_sem_friends.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">With friends at the 2024 SEM Annual Conference</div>
-  </div>
-</div>
+</section>
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/2026_tmse_panel.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">Panel discussion at the 2026 TMSE General Meeting</div>
+<section class="photo-section">
+  <div class="photo-section__heading"><p class="eyebrow">03</p><h2>Outreach &amp; life</h2></div>
+  <div class="photo-grid">
+    <div class="photo-card photo-card--wide">
+      {% include figure.liquid loading="lazy" path="assets/img/photos/2024_stem_girl_day2.jpg" class="img-fluid" zoomable=true %}
+      <p class="photo-card__caption">Volunteering at UT STEM Girl Day · 2024</p>
+    </div>
+    <div class="photo-card">
+      {% include figure.liquid loading="lazy" path="assets/img/photos/2024_stem_girl_day.jpg" class="img-fluid" zoomable=true %}
+      <p class="photo-card__caption">Hands-on mechanics demonstrations</p>
+    </div>
+    <div class="photo-card">
+      {% include figure.liquid loading="lazy" path="assets/img/photos/2025_football_club.jpg" class="img-fluid" zoomable=true %}
+      <p class="photo-card__caption">Engineering Mechanics Football Club · 2025</p>
+    </div>
+    <div class="photo-card">
+      {% include figure.liquid loading="lazy" path="assets/img/photos/2024_santa_barbara.jpg" class="img-fluid" zoomable=true %}
+      <p class="photo-card__caption">Santa Barbara, California · 2024</p>
+    </div>
+    <div class="photo-card photo-card--wide">
+      {% include figure.liquid loading="lazy" path="assets/img/photos/holding_flight_wing.jpg" class="img-fluid" zoomable=true %}
+      <p class="photo-card__caption">A speckled flight-wing specimen in the lab</p>
+    </div>
   </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/2025_with_michael_sutton.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">With Prof. Michael A. Sutton — the father of DIC — at IMAC-XLIII 2025</div>
-  </div>
-</div>
-
-<div class="row mt-3">
-  <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/2025_with_francois_hild.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">With Prof. Francois Hild at the 2025 SEM Conference</div>
-  </div>
-</div>
-
----
-
-## Lab & Group
-
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/2025_summer_group.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">Yang Research Group — Summer 2025</div>
-  </div>
-</div>
-
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/2025_group_holiday.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">Group holiday photo at ASE/EM, UT Austin</div>
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/2025_virtual_meeting.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">Virtual group meeting — 2025</div>
-  </div>
-</div>
-
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/2025_with_group.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">With group members in the lab</div>
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/2025_with_group2.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">Lab crew</div>
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/2025_with_group3.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">Lab day</div>
-  </div>
-</div>
-
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/2025_with_mentees.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">With undergraduate mentees</div>
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/2024_dinner_with_lab.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">Dinner with Dan, Lehu, and Dr. Yang</div>
-  </div>
-</div>
-
----
-
-## Outreach & Life
-
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/2024_stem_girl_day2.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">Volunteering at UT STEM Girl Day 2024 — lab demo for young students</div>
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/2024_stem_girl_day.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">Hands-on experiments at STEM Girl Day</div>
-  </div>
-</div>
-
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/2025_football_club.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">EM Football Club with friends — 2025</div>
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/2024_santa_barbara.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">Santa Barbara, CA — 2024</div>
-  </div>
-</div>
-
-<div class="row mt-3">
-  <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/photos/holding_flight_wing.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    <div class="caption">Holding a speckled flight wing specimen in the lab</div>
-  </div>
-</div>
+</section>

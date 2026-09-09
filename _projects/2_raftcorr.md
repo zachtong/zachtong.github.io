@@ -1,16 +1,25 @@
 ---
 layout: page
 title: RAFTcorr
-description: Open-source deep-learning framework for dense image registration and sub-pixel motion estimation — realistic synthetic-data generation, pre-trained weights, and a user-friendly GUI.
+description: A learning-accelerated DIC method for dense, sub-pixel displacement measurement, characterized against rigid motion, large deformation, noise, and complex specimens.
 img: assets/img/raftcorr/Al_with_hole_von_Mises_strain.gif
+card_img: /assets/img/project-covers/raftcorr.jpg
+card_description: Fast full-field displacement measurement with explicitly characterized accuracy, operating limits, and transfer to real experiments.
 importance: 1
-category: "Deep Learning for Measurement"
+category: "Learning-Accelerated Metrology"
 github: https://github.com/zachtong/RAFTcorr
+featured: false
+year: 2026
+status: Under review
+type_label: Research method
+tags: [DIC, Experimental Mechanics, Dense Measurement, Machine Learning]
+paper: https://www.researchsquare.com/article/rs-9452500/v1
 ---
 
 RAFTcorr is the first fully open-source RAFT-based Digital Image Correlation framework, bridging deep learning and experimental mechanics for dense displacement measurement.
 
 **Key Features:**
+
 - Physically realistic training-data generation pipeline
 - Complete training scripts and pre-trained model weights
 - User-friendly GUI that eliminates manual parameter tuning

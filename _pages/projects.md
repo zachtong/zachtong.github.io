@@ -1,65 +1,47 @@
 ---
 layout: page
-title: projects
+title: Research
+nav_title: Research
 permalink: /projects/
-description: Open-source tools I've built for optical measurement, 3D vision, and deep-learning-based deformation analysis.
+description: Experimental and computational mechanics spanning material characterization, inverse identification, full-field measurement, and model validation.
 nav: true
-nav_order: 3
-display_categories: ["Full-Field Measurement & Vision", "Deep Learning for Measurement", "Imaging & Analysis Tools"]
-horizontal: false
+nav_order: 2
+display_categories:
+  - Material Mechanics & Model Validation
+  - Experimental Material Characterization
+  - Full-Field Deformation Measurement
+  - Learning-Accelerated Metrology
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
+<div class="work-index">
+  <div class="work-index__intro">
+    <p>
+      My research starts with a mechanics question: how a material deforms, how its properties can be identified, or whether
+      a model predicts what an experiment actually measures. Full-field imaging, finite element simulation, inverse methods,
+      and machine learning are the tools I use to answer it.
+    </p>
   </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
+
+  <nav class="filter-nav" aria-label="Project categories">
+    <span>Explore by area</span>
+    {% for category in page.display_categories %}
+      <a href="#{{ category | slugify }}">{{ category }}</a>
     {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
+  </nav>
 
-{% else %}
-
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
+{% for category in page.display_categories %}
+{% assign categorized_projects = site.projects | where: 'category', category | sort: 'importance' %}
+<section class="work-category" id="{{ category | slugify }}">
+<div class="work-category__heading">
+<p class="eyebrow">0{{ forloop.index }}</p>
+<h2>{{ category }}</h2>
+<p>{{ categorized_projects | size }} research {% if categorized_projects.size == 1 %}project{% else %}projects{% endif %}</p>
+</div>
+<div class="work-grid">
+{% for project in categorized_projects %}
+{% include projects.liquid project=project %}
+{% endfor %}
+</div>
+</section>
+{% endfor %}
 </div>

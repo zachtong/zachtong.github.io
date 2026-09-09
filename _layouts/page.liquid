@@ -2,27 +2,68 @@
 layout: default
 ---
 {% if page._styles %}
-  <!-- Page/Post style -->
   <style type="text/css">
     {{ page._styles }}
   </style>
 {% endif %}
 
-<div class="post">
-  <header class="post-header">
+{% assign is_project = false %}
+{% if page.collection == 'projects' %}
+  {% assign is_project = true %}
+{% endif %}
+
+<div class="post {% if is_project %}project-detail{% endif %}">
+  {% if is_project %}
+    <a class="back-link" href="{{ '/projects/' | relative_url }}"><span aria-hidden="true">←</span> All research</a>
+  {% endif %}
+
+  <header class="post-header {% if is_project %}project-detail__header{% endif %}">
+    {% if is_project %}
+      <div class="eyebrow-row">
+        <span class="eyebrow">{{ page.type_label | default: 'Research project' }}</span>
+        {% if page.status -%}
+          <span class="status-label">{{ page.status }}</span>
+        {%- endif %}
+      </div>
+    {% endif %}
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-description">{{ page.description }}</p>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+
+    {% if is_project %}
+      {% if page.tags %}
+        <div class="tag-list" aria-label="Project technologies">
+          {% for tag in page.tags -%}
+            <span>{{ tag }}</span>
+          {%- endfor %}
+        </div>
+      {% endif %}
+      <div class="project-actions">
+        {% if page.github %}
+          <a class="button button--primary" href="{{ page.github }}"
+            ><i class="fa-brands fa-github" aria-hidden="true"></i> Code &amp; implementation</a
+          >
+        {% endif %}
+        {% if page.pypi -%}
+          <a class="button button--secondary" href="{{ page.pypi }}">PyPI</a>
+        {%- endif %}
+        {% if page.paper -%}
+          <a class="button button--secondary" href="{{ page.paper }}">Paper</a>
+        {%- endif %}
+      </div>
+    {% endif %}
   </header>
 
-  <article>
+  <article class="{% if is_project %}project-detail__body prose{% endif %}">
     {{ content }}
   </article>
 
   {% if page.related_publications %}
-    <h2>References</h2>
-    <div class="publications">
-      {% bibliography --cited_in_order %}
-    </div>
+    <section class="related-publications">
+      <h2>References</h2>
+      <div class="publications">{% bibliography --cited_in_order %}</div>
+    </section>
   {% endif %}
 
   {% if site.giscus and page.giscus_comments %}
