@@ -5,7 +5,6 @@ description: Resolution-aware, learning-accelerated DVC for measuring three-dime
 importance: 2
 category: "Learning-Accelerated Metrology"
 github: https://github.com/zachtong/RAFT-DVC
-visual_label: RAFT · DVC
 year: 2026
 status: Preprint
 type_label: Research method

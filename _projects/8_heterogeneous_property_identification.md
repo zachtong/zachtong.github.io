@@ -9,8 +9,6 @@ featured: true
 year: 2025–present
 status: In progress
 type_label: Mechanics research
-visual_label: INVERSE · MECHANICS
-visual_variant: inverse
 tags: [Inverse Problems, Constitutive Modeling, FEM, Model Validation]
 ---
 

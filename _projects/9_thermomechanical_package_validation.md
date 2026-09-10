@@ -9,8 +9,6 @@ featured: true
 year: 2025–present
 status: In progress
 type_label: Computational mechanics research
-visual_label: THERMO · MECHANICS
-visual_variant: thermo
 tags: [Thermo-Mechanical FEA, Abaqus, Warpage, Test Correlation]
 ---
 

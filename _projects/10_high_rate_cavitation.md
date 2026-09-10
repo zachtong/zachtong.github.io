@@ -9,8 +9,6 @@ featured: true
 year: 2024–present
 status: In progress
 type_label: Experimental mechanics research
-visual_label: HIGH-RATE · MECHANICS
-visual_variant: cavitation
 tags: [High Strain Rate, Cavitation, Soft Materials, High-Speed Imaging]
 ---
 

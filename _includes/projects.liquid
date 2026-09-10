@@ -1,35 +1,32 @@
 {% assign project = include.project | default: project %}
-<article class="work-card {% if include.featured %}work-card--featured{% endif %}">
-  <a
-    class="work-card__visual{% if project.img %} work-card__visual--project-media{% endif %}"
-    href="{{ project.url | relative_url }}"
-    aria-label="Read about {{ project.title }}"
-  >
-    {% if project.img %}
-      <img
-        src="{{ project.img | relative_url }}"
-        alt="{{ project.card_alt | default: project.title | append: ' project demonstration' }}"
-        loading="lazy"
-      >
-    {% elsif project.card_img %}
-      <img
-        src="{{ project.card_img | relative_url }}"
-        alt="{{ project.card_alt | default: project.title | append: ' research visualization' }}"
-        loading="lazy"
-      >
-    {% else %}
-      <span
-        class="work-card__generated{% if project.visual_variant %} work-card__generated--{{ project.visual_variant }}{% endif %}"
-        aria-hidden="true"
-      >
-        <span class="work-card__grid"></span>
-        <strong>{{ project.visual_label | default: project.title }}</strong>
-      </span>
-    {% endif %}
-    <span class="work-card__number">0{{ forloop.index }}</span>
-  </a>
+<article class="work-card{% unless project.img or project.card_img %} work-card--text-only{% endunless %}{% if include.featured %} work-card--featured{% endif %}">
+  {% if project.img or project.card_img %}
+    <a
+      class="work-card__visual{% if project.img %} work-card__visual--project-media{% endif %}"
+      href="{{ project.url | relative_url }}"
+      aria-label="Read about {{ project.title }}"
+    >
+      {% if project.img %}
+        <img
+          src="{{ project.img | relative_url }}"
+          alt="{{ project.card_alt | default: project.title | append: ' project demonstration' }}"
+          loading="lazy"
+        >
+      {% elsif project.card_img %}
+        <img
+          src="{{ project.card_img | relative_url }}"
+          alt="{{ project.card_alt | default: project.title | append: ' research visualization' }}"
+          loading="lazy"
+        >
+      {% endif %}
+      <span class="work-card__number">0{{ forloop.index }}</span>
+    </a>
+  {% endif %}
 
   <div class="work-card__body">
+    {% unless project.img or project.card_img %}
+      <span class="work-card__index" aria-hidden="true">0{{ forloop.index }}</span>
+    {% endunless %}
     <div class="work-card__meta">
       <span>{{ project.category }}</span>
       {% if project.year -%}
