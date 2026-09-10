@@ -117,18 +117,20 @@ layout: default
   </section>
 
   <section class="home-contact" aria-labelledby="contact-title">
-    <div>
-      <p class="eyebrow">Let’s work together</p>
-      <h2 id="contact-title">Working on a difficult material, measurement, or validation problem?</h2>
-      <p>I am always glad to talk about mechanics research, experimental methods, simulation, and engineering opportunities.</p>
+    <div class="home-contact__heading">
+      <h2 id="contact-title">Contact</h2>
     </div>
-    <div class="home-contact__actions">
-      <a class="button button--light" href="mailto:{{ site.data.socials.email }}">Start a conversation</a>
-      <div class="home-contact__links">
+    <div class="home-contact__details">
+      <p>
+        <a href="mailto:{{ site.data.socials.email }}">{{ site.data.socials.email }}</a><br>
+        Engineering Mechanics, The University of Texas at Austin<br>
+        Austin, Texas
+      </p>
+      <nav class="home-contact__links" aria-label="Contact and professional profiles">
         <a href="https://github.com/{{ site.data.socials.github_username }}">GitHub</a>
         <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}">LinkedIn</a>
         <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}">Google Scholar</a>
-      </div>
+      </nav>
     </div>
   </section>
 </div>
