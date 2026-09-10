@@ -3,7 +3,6 @@ layout: page
 title: pyALDIC-3D
 description: Two-camera stereo-DIC for metric 3D shape, displacement, and surface strain measurement with independent quality checks.
 img: assets/img/pyaldic3d_main_gui.png
-card_img: /assets/img/project-covers/pyaldic-3d.jpg
 card_description: Experimental 3D surface kinematics for specimens undergoing out-of-plane motion, large strain, and discontinuity.
 importance: 3
 category: "Full-Field Deformation Measurement"

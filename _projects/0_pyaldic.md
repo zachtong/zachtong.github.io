@@ -3,7 +3,6 @@ layout: page
 title: pyALDIC
 description: A full-field experimental mechanics method for measuring 2D displacement and strain near large gradients, holes, cracks, and material boundaries.
 img: assets/img/pyaldic_demo.gif
-card_img: /assets/img/project-covers/pyaldic.jpg
 card_description: Adaptive, regularized DIC for measuring displacement and strain near complex geometry, discontinuities, and large deformation.
 importance: 1
 category: "Full-Field Deformation Measurement"

@@ -3,7 +3,6 @@ layout: page
 title: 3D-Stereo-ALDIC
 description: A stereo-DIC method for experimentally measuring 3D shape, displacement, and surface strain across complex geometry and large deformation.
 img: assets/img/stereo-ALDIC_demo.gif
-card_img: /assets/img/project-covers/stereo-aldic.jpg
 card_description: Full-field 3D deformation measurement for model validation on biological tissue and architected-material specimens.
 importance: 4
 category: "Full-Field Deformation Measurement"

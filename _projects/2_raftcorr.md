@@ -3,7 +3,6 @@ layout: page
 title: RAFTcorr
 description: A learning-accelerated DIC method for dense, sub-pixel displacement measurement, characterized against rigid motion, large deformation, noise, and complex specimens.
 img: assets/img/raftcorr/Al_with_hole_von_Mises_strain.gif
-card_img: /assets/img/project-covers/raftcorr.jpg
 card_description: Fast full-field displacement measurement with explicitly characterized accuracy, operating limits, and transfer to real experiments.
 importance: 1
 category: "Learning-Accelerated Metrology"

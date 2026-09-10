@@ -621,6 +621,14 @@ progress,
   width: 100%;
 }
 
+.work-card__visual--project-media {
+  background: #0d1118;
+}
+
+.work-card__visual--project-media img {
+  object-fit: contain;
+}
+
 .work-card:hover .work-card__visual img {
   transform: scale(1.025);
 }

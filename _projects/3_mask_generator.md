@@ -3,7 +3,6 @@ layout: page
 title: DIC-ROI-Mask-Generator
 description: Machine-learning-aided spatial adaptation for reliable DIC measurement near holes, cracks, and irregular material boundaries.
 img: assets/img/mask_generator.gif
-card_img: /assets/img/project-covers/mask-generator.jpg
 card_description: Spatial adaptation that keeps full-field strain measurement inside valid material regions near complex boundaries.
 importance: 3
 category: "Learning-Accelerated Metrology"

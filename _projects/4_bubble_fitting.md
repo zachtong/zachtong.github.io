@@ -3,7 +3,6 @@ layout: page
 title: Bubble-Radius-Fitting
 description: Image-based extraction of transient bubble radius from ultra-high-speed cavitation experiments in soft and architected materials.
 img: assets/img/Bubble_radius_fitting.gif
-card_img: /assets/img/project-covers/bubble-fitting.jpg
 card_description: Quantitative bubble-dynamics measurement from ultra-high-speed cavitation sequences with difficult optical backgrounds.
 importance: 4
 category: "Experimental Material Characterization"

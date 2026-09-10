@@ -3,7 +3,6 @@ layout: page
 title: pyALDVC
 description: Full-field 3D displacement and strain measurement from volumetric experiments including micro-CT, confocal microscopy, MRI, and OCT.
 img: assets/img/pyaldvc_indentation_orbit.gif
-card_img: /assets/img/project-covers/pyaldvc.jpg
 card_description: Volumetric deformation measurement that preserves steep gradients and discontinuities in noisy experimental scans.
 importance: 2
 category: "Full-Field Deformation Measurement"

@@ -1,7 +1,17 @@
 {% assign project = include.project | default: project %}
 <article class="work-card {% if include.featured %}work-card--featured{% endif %}">
-  <a class="work-card__visual" href="{{ project.url | relative_url }}" aria-label="Read about {{ project.title }}">
-    {% if project.card_img %}
+  <a
+    class="work-card__visual{% if project.img %} work-card__visual--project-media{% endif %}"
+    href="{{ project.url | relative_url }}"
+    aria-label="Read about {{ project.title }}"
+  >
+    {% if project.img %}
+      <img
+        src="{{ project.img | relative_url }}"
+        alt="{{ project.card_alt | default: project.title | append: ' project demonstration' }}"
+        loading="lazy"
+      >
+    {% elsif project.card_img %}
       <img
         src="{{ project.card_img | relative_url }}"
         alt="{{ project.card_alt | default: project.title | append: ' research visualization' }}"
