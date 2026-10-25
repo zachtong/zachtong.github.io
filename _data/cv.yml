@@ -54,8 +54,8 @@ cv:
         start_date: 2026-05-01
         end_date: 2026-08-31
         highlights:
-          - "FE-based machine-learning surrogate models for advanced packaging, enabling near-real-time response prediction within evaluated operating conditions"
-          - "End-to-end training pipeline turning parametric FE multiphysics datasets into models that reconstruct full-field responses from sparse measurements"
+          - "FE-based machine-learning surrogate models for advanced packaging applications"
+          - "End-to-end pipeline from parametric FE multiphysics simulations to trained models, covering data generation, training, and evaluation"
 
       - company: The University of Texas at Austin
         position: Research Assistant
