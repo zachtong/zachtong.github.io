@@ -9,8 +9,8 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-research",
-          title: "Research",
+  },{id: "nav-projects",
+          title: "Projects",
           description: "Experimental and computational mechanics spanning material characterization, inverse identification, full-field measurement, and model validation.",
           section: "Navigation",
           handler: () => {
@@ -30,8 +30,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/news/";
           },
-        },{id: "nav-résumé",
-          title: "Résumé",
+        },{id: "nav-cv",
+          title: "CV",
           description: "Research engineering experience across solid mechanics, material characterization, finite element simulation, full-field measurement, and model validation.",
           section: "Navigation",
           handler: () => {
