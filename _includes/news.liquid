@@ -1,31 +1,26 @@
-<div class="timeline">
-  {% if site.news != blank %}
-    {% assign news_size = site.news | size %}
-    {% assign news = site.news | reverse %}
-    {% if include.limit and page.announcements.limit %}
-      {% assign news_limit = page.announcements.limit %}
-    {% else %}
-      {% assign news_limit = news_size %}
-    {% endif %}
+{% if site.news != blank %}
+  {% assign news_size = site.news | size %}
+  {% assign news = site.news | reverse %}
+  {% if include.limit and page.announcements.limit %}
+    {% assign news_limit = page.announcements.limit %}
+  {% else %}
+    {% assign news_limit = news_size %}
+  {% endif %}
 
+  <ul class="news-list">
     {% for item in news limit: news_limit %}
-      <article class="timeline-item">
-        <time datetime="{{ item.date | date_to_xmlschema }}">
-          <span>{{ item.date | date: '%b' }}</span>
-          <strong>{{ item.date | date: '%d' }}</strong>
-          <span>{{ item.date | date: '%Y' }}</span>
-        </time>
-        <div class="timeline-item__marker" aria-hidden="true"></div>
-        <div class="timeline-item__content">
+      <li class="news-list__item">
+        <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: '%b %Y' }}</time>
+        <div class="news-list__text">
           {% if item.inline %}
             {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
           {% else %}
-            <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
           {% endif %}
         </div>
-      </article>
+      </li>
     {% endfor %}
-  {% else %}
-    <p>No updates yet.</p>
-  {% endif %}
-</div>
+  </ul>
+{% else %}
+  <p>No news yet.</p>
+{% endif %}

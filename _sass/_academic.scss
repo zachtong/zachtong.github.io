@@ -1,0 +1,677 @@
+/*******************************************************************************
+ * Academic style
+ * A plain, serif, two-column academic homepage layered on top of al-folio.
+ * Loaded last from assets/css/main.scss so it can refine theme defaults.
+ ******************************************************************************/
+
+:root {
+  --ac-bg: #ffffff;
+  --ac-text: #2e2e2e;
+  --ac-muted: #6a6a6a;
+  --ac-heading: #1c315e;
+  --ac-link: #2f68a4;
+  --ac-link-hover: #1c315e;
+  --ac-rule: #e2e2e2;
+  --ac-thumb-bg: #f3f3f3;
+
+  --global-bg-color: var(--ac-bg);
+  --global-text-color: var(--ac-text);
+  --global-text-color-light: var(--ac-muted);
+  --global-theme-color: var(--ac-link);
+  --global-hover-color: var(--ac-link-hover);
+  --global-divider-color: var(--ac-rule);
+  --global-card-bg-color: var(--ac-bg);
+  --global-footer-bg-color: var(--ac-bg);
+  --global-footer-text-color: var(--ac-muted);
+  --global-footer-link-color: var(--ac-link);
+}
+
+html[data-theme="dark"] {
+  --ac-bg: #16181d;
+  --ac-text: #d8dadf;
+  --ac-muted: #9a9fa8;
+  --ac-heading: #b4c8ee;
+  --ac-link: #8db3e6;
+  --ac-link-hover: #c9d8f4;
+  --ac-rule: #2e323a;
+  --ac-thumb-bg: #22252c;
+
+  --global-bg-color: var(--ac-bg);
+  --global-text-color: var(--ac-text);
+  --global-text-color-light: var(--ac-muted);
+  --global-theme-color: var(--ac-link);
+  --global-hover-color: var(--ac-link-hover);
+  --global-divider-color: var(--ac-rule);
+  --global-card-bg-color: var(--ac-bg);
+  --global-footer-bg-color: var(--ac-bg);
+  --global-footer-text-color: var(--ac-muted);
+  --global-footer-link-color: var(--ac-link);
+}
+
+$ac-serif:
+  "Source Serif 4",
+  Georgia,
+  "Times New Roman",
+  serif;
+$ac-mono:
+  ui-monospace,
+  SFMono-Regular,
+  Menlo,
+  Consolas,
+  monospace;
+$ac-nav-height: 64px;
+$ac-mobile: 767.98px;
+
+/* Base typography ---------------------------------------------------------- */
+
+body {
+  background: var(--ac-bg);
+  color: var(--ac-text);
+  font-family: $ac-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+body.fixed-top-nav {
+  padding-top: $ac-nav-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $ac-serif;
+  color: var(--ac-heading);
+  font-weight: 600;
+}
+
+a {
+  color: var(--ac-link);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--ac-link-hover);
+    text-decoration: underline;
+  }
+}
+
+strong,
+b {
+  font-weight: 700;
+  color: var(--ac-text);
+}
+
+.site-main {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Section headings: navy title with a thin rule underneath (home + pages). */
+.home__main h2,
+.post-content h2,
+.post h2.section-heading,
+.publications h2.bibliography {
+  font-size: 1.65rem;
+  margin: 2.4rem 0 1.1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--ac-rule);
+}
+
+/* Navigation bar ----------------------------------------------------------- */
+
+.navbar {
+  min-height: $ac-nav-height;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: var(--ac-bg);
+  border-bottom: 1px solid var(--ac-rule);
+  opacity: 1;
+}
+
+.site-nav__inner {
+  align-items: stretch;
+}
+
+.site-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--ac-heading);
+
+  &:hover,
+  &:focus {
+    color: var(--ac-heading);
+    text-decoration: none;
+  }
+}
+
+.navbar.navbar-light .navbar-nav {
+  .nav-item {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0 0.85rem;
+    font-size: 1.05rem;
+    color: var(--ac-text);
+    border-bottom: 3px solid transparent;
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: var(--ac-heading);
+      text-decoration: none;
+    }
+  }
+
+  .nav-item.active > .nav-link {
+    color: var(--ac-heading);
+    font-weight: 600;
+    background: none;
+    border-bottom-color: var(--ac-heading);
+  }
+}
+
+.navbar.navbar-light .navbar-nav .site-nav__toggle {
+  align-items: center;
+  margin-left: 0.4rem;
+}
+
+.site-icon-button {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  background: none;
+  border: 0;
+  padding: 0 0.5rem;
+  color: var(--ac-muted);
+  font-size: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--ac-heading);
+  }
+
+  // The theme glyphs sit low relative to the serif nav text.
+  i {
+    position: relative;
+    top: -3px;
+  }
+}
+
+.navbar-toggler .icon-bar {
+  background-color: var(--ac-text);
+}
+
+/* Homepage: profile sidebar + main column ---------------------------------- */
+
+.home {
+  display: grid;
+  grid-template-columns: 290px minmax(0, 1fr);
+  gap: 4rem;
+  align-items: start;
+}
+
+.home-profile {
+  text-align: center;
+  padding-top: 0.6rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+.home-profile__photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.6rem;
+}
+
+.home-profile__name {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+}
+
+.home-profile__role {
+  font-size: 1.05rem;
+  color: var(--ac-text);
+}
+
+.home-profile__affiliation {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-top: 0.15rem !important;
+}
+
+.home-profile__email {
+  margin-top: 0.9rem !important;
+  font-family: $ac-mono;
+  font-size: 0.88rem;
+  color: var(--ac-muted);
+}
+
+.home-profile__links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.3rem;
+  font-size: 1.55rem;
+
+  a {
+    color: var(--ac-heading);
+
+    &:hover,
+    &:focus {
+      color: var(--ac-link);
+      text-decoration: none;
+    }
+  }
+}
+
+.home__main {
+  min-width: 0;
+
+  > h2:first-child {
+    margin-top: 0;
+  }
+
+  ul {
+    padding-left: 1.4rem;
+  }
+
+  li {
+    margin-bottom: 0.3rem;
+  }
+}
+
+.home__more {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+}
+
+/* News list ---------------------------------------------------------------- */
+
+.news-list {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0;
+}
+
+.news-list__item {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  gap: 1.2rem;
+  margin-bottom: 0.75rem !important;
+
+  time {
+    font-weight: 700;
+    color: var(--ac-text);
+    white-space: nowrap;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+/* Generic pages ------------------------------------------------------------ */
+
+.post-header {
+  margin-bottom: 1.6rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--ac-rule);
+
+  .post-title {
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .post-description {
+    margin: 0.5rem 0 0;
+    font-size: 1.08rem;
+    color: var(--ac-muted);
+  }
+}
+
+.page-note {
+  color: var(--ac-muted);
+}
+
+.post-content {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Projects list ------------------------------------------------------------ */
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.project-item {
+  display: grid;
+  grid-template-columns: 176px minmax(0, 1fr);
+  gap: 1.4rem;
+  align-items: start;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--ac-rule);
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.project-item--text {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.project-item__thumb {
+  display: block;
+
+  img {
+    display: block;
+    width: 176px;
+    height: 110px;
+    object-fit: cover;
+    border: 1px solid var(--ac-rule);
+    border-radius: 4px;
+    background: var(--ac-thumb-bg);
+  }
+}
+
+.project-item__title {
+  font-size: 1.18rem;
+  margin: 0 0 0.25rem;
+
+  a {
+    color: var(--ac-heading);
+  }
+}
+
+.project-item__desc {
+  margin: 0 0 0.3rem;
+}
+
+.project-item__links,
+.project-links {
+  margin: 0;
+  font-size: 0.95rem;
+
+  a {
+    margin-right: 0.5rem;
+  }
+}
+
+/* Project detail pages ----------------------------------------------------- */
+
+.back-link {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.project-meta {
+  margin: 0.4rem 0 0.2rem;
+  font-size: 0.95rem;
+  color: var(--ac-muted);
+}
+
+/* Publications ------------------------------------------------------------- */
+/* Selectors mirror the depth used in _publications.scss so these rules win. */
+
+.publications {
+  h2.bibliography {
+    font-size: 1.4rem;
+    text-align: left;
+    color: var(--ac-heading);
+    border-top: 0;
+    padding-top: 0;
+    margin: 2.2rem 0 1rem;
+  }
+
+  ol.bibliography {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 1.3rem;
+
+      .row {
+        display: block;
+        margin: 0;
+      }
+
+      /* The venue badge column is redundant with the venue line; hide it. */
+      .abbr,
+      .preview {
+        display: none;
+      }
+
+      .row > [id] {
+        max-width: 100%;
+        padding: 0;
+      }
+
+      .title {
+        font-weight: 600;
+        color: var(--ac-text);
+      }
+
+      .author {
+        > em {
+          border-bottom: 0;
+          font-style: normal;
+          font-weight: 700;
+        }
+
+        > span.more-authors {
+          border-bottom: 1px dotted var(--ac-muted);
+        }
+      }
+
+      .periodical em {
+        font-style: italic;
+      }
+
+      .links {
+        margin-top: 0.1rem;
+
+        a.btn {
+          padding: 0;
+          margin: 0 0.6rem 0 0;
+          border: 0;
+          background: none;
+          box-shadow: none;
+          font-family: $ac-serif;
+          font-size: 0.92rem;
+          text-transform: none;
+          color: var(--ac-link);
+
+          &::before {
+            content: "[";
+          }
+
+          &::after {
+            content: "]";
+          }
+
+          &:hover {
+            color: var(--ac-link-hover);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* CV page ------------------------------------------------------------------ */
+
+.pdf-frame {
+  display: block;
+  width: 100%;
+  height: 85vh;
+  border: 1px solid var(--ac-rule);
+}
+
+.pdf-mobile-note {
+  display: none;
+}
+
+/* Photos page -------------------------------------------------------------- */
+
+.page-lede {
+  color: var(--ac-muted);
+}
+
+.photo-section {
+  margin-top: 2rem;
+}
+
+.photo-section__heading {
+  .eyebrow {
+    display: none;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin: 0 0 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--ac-rule);
+  }
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.photo-card--wide {
+  grid-column: span 2;
+}
+
+.photo-card {
+  figure {
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+  }
+}
+
+.photo-card__caption {
+  margin: 0.4rem 0 0;
+  font-size: 0.92rem;
+  color: var(--ac-muted);
+}
+
+/* Footer ------------------------------------------------------------------- */
+
+.site-footer {
+  border-top: 1px solid var(--ac-rule);
+  background: var(--ac-bg);
+}
+
+.site-footer__inner {
+  padding: 1.4rem 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--ac-muted);
+}
+
+/* Small screens ------------------------------------------------------------ */
+
+@media (max-width: $ac-mobile) {
+  body {
+    font-size: 16px;
+  }
+
+  .site-main {
+    padding-top: 1.8rem;
+  }
+
+  .navbar.navbar-light .navbar-nav {
+    padding-bottom: 0.6rem;
+
+    .nav-item .nav-link {
+      padding: 0.45rem 0;
+      border-bottom: 0;
+    }
+
+    .nav-item.active > .nav-link {
+      border-bottom: 0;
+      text-decoration: underline;
+    }
+  }
+
+  .site-nav__toggle {
+    margin-left: 0;
+  }
+
+  .site-icon-button {
+    padding: 0.45rem 0;
+  }
+
+  .home {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+  }
+
+  .home-profile__photo {
+    width: 170px;
+    height: 170px;
+  }
+
+  .news-list__item {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .project-item {
+    grid-template-columns: 110px minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .project-item--text {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .project-item__thumb img {
+    width: 110px;
+    height: 72px;
+  }
+
+  .photo-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .photo-card--wide {
+    grid-column: auto;
+  }
+
+  .pdf-frame {
+    display: none;
+  }
+
+  .pdf-mobile-note {
+    display: block;
+  }
+}

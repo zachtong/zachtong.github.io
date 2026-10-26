@@ -1,56 +1,27 @@
 {% assign project = include.project | default: project %}
-<article class="work-card{% unless project.img or project.card_img %} work-card--text-only{% endunless %}{% if include.featured %} work-card--featured{% endif %}">
-  {% if project.img or project.card_img %}
-    <a
-      class="work-card__visual{% if project.img %} work-card__visual--project-media{% endif %}"
-      href="{{ project.url | relative_url }}"
-      aria-label="Read about {{ project.title }}"
-    >
-      {% if project.img %}
-        <img
-          src="{{ project.img | relative_url }}"
-          alt="{{ project.card_alt | default: project.title | append: ' project demonstration' }}"
-          loading="lazy"
-        >
-      {% elsif project.card_img %}
-        <img
-          src="{{ project.card_img | relative_url }}"
-          alt="{{ project.card_alt | default: project.title | append: ' research visualization' }}"
-          loading="lazy"
-        >
-      {% endif %}
-      <span class="work-card__number">0{{ forloop.index }}</span>
+{% assign thumb = project.img | default: project.card_img %}
+<li class="project-item{% unless thumb %} project-item--text{% endunless %}">
+  {% if thumb %}
+    <a class="project-item__thumb" href="{{ project.url | relative_url }}" tabindex="-1" aria-hidden="true">
+      <img src="{{ thumb | relative_url }}" alt="" loading="lazy">
     </a>
   {% endif %}
-
-  <div class="work-card__body">
-    {% unless project.img or project.card_img %}
-      <span class="work-card__index" aria-hidden="true">0{{ forloop.index }}</span>
-    {% endunless %}
-    <div class="work-card__meta">
-      <span>{{ project.category }}</span>
-      {% if project.year -%}
-        <span>{{ project.year }}</span>
-      {%- endif %}
-    </div>
-    <h3>
+  <div class="project-item__body">
+    <h3 class="project-item__title">
       <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
     </h3>
-    <p>{{ project.card_description | default: project.description }}</p>
-    {% if project.tags %}
-      <div class="tag-list tag-list--compact">
-        {% for tag in project.tags limit: 4 -%}
-          <span>{{ tag }}</span>
-        {%- endfor %}
-      </div>
-    {% endif %}
-    <div class="work-card__links">
-      <a class="text-link" href="{{ project.url | relative_url }}">Research detail <span aria-hidden="true">→</span></a>
-      {% if project.github %}
-        <a class="icon-link" href="{{ project.github }}" aria-label="{{ project.title }} on GitHub">
-          <i class="fa-brands fa-github" aria-hidden="true"></i>
-        </a>
-      {% endif %}
-    </div>
+    <p class="project-item__desc">{{ project.card_description | default: project.description }}</p>
+    <p class="project-item__links">
+      <a href="{{ project.url | relative_url }}">[Details]</a>
+      {% if project.github -%}
+        <a href="{{ project.github }}">[Code]</a>
+      {%- endif %}
+      {% if project.paper -%}
+        <a href="{{ project.paper }}">[Paper]</a>
+      {%- endif %}
+      {% if project.pypi -%}
+        <a href="{{ project.pypi }}">[PyPI]</a>
+      {%- endif %}
+    </p>
   </div>
-</article>
+</li>

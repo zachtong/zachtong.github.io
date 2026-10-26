@@ -5,10 +5,7 @@
     aria-label="Primary navigation"
   >
     <div class="container site-nav__inner">
-      <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Zixiang Tong, home">
-        <span class="site-brand__mark" aria-hidden="true">ZT</span>
-        <span class="site-brand__name">Zixiang Tong</span>
-      </a>
+      <a class="site-brand" href="{{ '/' | relative_url }}">Zixiang Tong</a>
 
       <button
         class="navbar-toggler collapsed ml-auto"
@@ -26,15 +23,15 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto align-items-md-center">
-          {% for page in site.pages %}
-            {% if page.permalink == '/' %}
-              {% assign about_title = page.nav_title | default: page.title %}
+          {% for p in site.pages %}
+            {% if p.permalink == '/' %}
+              {% assign home_title = p.nav_title | default: p.title %}
             {% endif %}
           {% endfor %}
 
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
-              {{- about_title -}}
+              {{- home_title -}}
               {% if page.permalink == '/' -%}
                 <span class="sr-only">(current)</span>
               {%- endif %}
@@ -56,28 +53,17 @@
             {% endif %}
           {% endfor %}
 
-          <li class="site-nav__utilities">
-            {% if site.search_enabled %}
-              <button id="search-toggle" class="site-icon-button" title="Search" aria-label="Search" onclick="openSearchModal()">
-                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-              </button>
-            {% endif %}
-            {% if site.enable_darkmode %}
+          {% if site.enable_darkmode %}
+            <li class="nav-item site-nav__toggle">
               <button id="light-toggle" class="site-icon-button" title="Change color theme" aria-label="Change color theme">
                 <i class="fa-half-sun-moon" id="light-toggle-system"></i>
                 <i class="fa-solid fa-moon" id="light-toggle-dark"></i>
                 <i class="fa-solid fa-sun" id="light-toggle-light"></i>
               </button>
-            {% endif %}
-          </li>
+            </li>
+          {% endif %}
         </ul>
       </div>
     </div>
   </nav>
-
-  {% if site.enable_progressbar %}
-    <progress id="progress" value="0" aria-label="Page reading progress">
-      <span class="progress-container"><span class="progress-bar"></span></span>
-    </progress>
-  {% endif %}
 </header>
